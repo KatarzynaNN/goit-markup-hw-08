@@ -138,3 +138,21 @@ body {
 .footer-contact:focus {
     color: var(--selection);
 }
+/* portfolio */
+
+.main-portfolio {
+    background-color: var(--background-color1);
+}
+.portfolio-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--header-color);
+    background-color: var(--backroung-color-team);
+    cursor: pointer;
+}
+.portfolio-button:focus,
+.portfolio-button:hover {
+    color: var(--white-color);
+    background-color: var(--selection);
+}
