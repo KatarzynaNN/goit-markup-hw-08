@@ -3,7 +3,7 @@
     --header-color: #212121;
     --p-color: #757575;
     --white-color: #ffffff;
-    --footer-color-mail: #ffffff99;
+    --footer-color-mail: rgba(255, 255, 255, 0.6);
     --background-color1: #ffffff;
     --background-color2: #2f303a;
     --bacground-color3: #e5e5e5;
@@ -79,4 +79,62 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-color);
+    background-color: #2196f3;
+    cursor: pointer;
+}
+.main-two-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.main-two-paragraph {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--p-color);
+}
+.main-three-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+.main-four {
+    background-color: var(--backroung-color-team);
+}
+.main-four-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+.main-four-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.main-four-job {
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--p-color);
+}
+.footer {
+    background-color: var(--background-color2);
+}
+.footer-adress {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--white-color);
+}
+.footer-contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    text-decoration: none;
+    color: var(--footer-color-mail);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--selection);
 }
