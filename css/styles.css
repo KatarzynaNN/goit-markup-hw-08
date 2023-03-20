@@ -1,23 +1,26 @@
 :root {
     --logo: #000000;
-    --header-color: #212121;
+    --main-text-color: #212121;
     --p-color: #757575;
     --white-color: #ffffff;
     --footer-color-mail: rgba(255, 255, 255, 0.6);
     --background-color1: #ffffff;
     --background-color2: #2f303a;
     --bacground-color3: #e5e5e5;
-    --backroung-color-team: #f5f4fa;
+    --backroung-color4: #f5f4fa;
     --selection: #2196f3;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--header-color);
+    color: var(--main-text-color);
     background-color: var(--background-color1);
     letter-spacing: 0.03em;
 }
-.Logo {
+
+/* index.html */
+
+.logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -25,7 +28,7 @@ body {
     color: var(--logo);
     text-decoration: none;
 }
-.Web {
+.web {
     color: var(--selection);
 }
 .navigation {
@@ -40,6 +43,7 @@ body {
     text-decoration: none;
 }
 .navigation-link:hover,
+.navigation-link:active,
 .navigation-link:focus {
     color: var(--selection);
     cursor: pointer;
@@ -53,6 +57,7 @@ body {
     text-decoration: none;
 }
 .contact:hover,
+.contact:active,
 .contact:focus {
     color: var(--selection);
     cursor: pointer;
@@ -100,7 +105,7 @@ body {
     text-align: center;
 }
 .main-four {
-    background-color: var(--backroung-color-team);
+    background-color: var(--backroung-color4);
 }
 .main-four-title {
     font-weight: 700;
@@ -135,10 +140,11 @@ body {
     color: var(--footer-color-mail);
 }
 .footer-contact:hover,
+.footer-contact:active,
 .footer-contact:focus {
     color: var(--selection);
 }
-/* portfolio */
+/* portfolio.html */
 
 .main-portfolio {
     background-color: var(--background-color1);
@@ -147,12 +153,22 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--header-color);
-    background-color: var(--backroung-color-team);
+    background-color: var(--backroung-color4);
     cursor: pointer;
 }
 .portfolio-button:focus,
+.portfolio-button:active,
 .portfolio-button:hover {
     color: var(--white-color);
     background-color: var(--selection);
+}
+.portfolio-images-titles {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-images-decription {
+    font-size: 16px;
+    line-height: 1.9;
 }
