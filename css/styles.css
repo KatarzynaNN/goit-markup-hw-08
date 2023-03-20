@@ -31,6 +31,9 @@ body {
 .web {
     color: var(--selection);
 }
+.studio {
+    color: var(--white-color);
+}
 .navigation {
     font-weight: 500;
     font-size: 14px;
