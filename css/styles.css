@@ -14,8 +14,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
-    background-color: var(--background-color1);
-    letter-spacing: 0.03em;
 }
 
 /* index.html */
@@ -25,6 +23,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
     color: var(--logo);
     text-decoration: none;
 }
@@ -40,6 +39,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--header-color);
+    background-color: var(--background-color1);
 }
 .navigation-link {
     color: inherit;
@@ -74,7 +74,6 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-color);
 }
 .main-button {
     font-weight: 700;
@@ -83,20 +82,23 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--white-color);
-    background-color: #2196f3;
-    cursor: pointer;
+    letter-spacing: 0;
+    border: none;
+    border-radius: 4px;
+    color: inherit;
+    background-color: var(--selection);
 }
 .main-two-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .main-two-paragraph {
     font-size: 14px;
     line-height: 1.8;
+    letter-spacing: 0.03em;
     color: var(--p-color);
 }
 .main-three-title {
@@ -104,15 +106,20 @@ body {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 .main-four {
     background-color: var(--backroung-color4);
+}
+.main-four-backgroung {
+    background-color: var(--background-color1);
 }
 .main-four-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 .main-four-name {
     font-weight: 500;
@@ -131,12 +138,14 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 1.8;
+    letter-spacing: 0.03em;
     color: var(--white-color);
 }
 .footer-contact {
     font-style: normal;
     font-size: 14px;
     line-height: 1.8;
+    letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--footer-color-mail);
 }
@@ -153,8 +162,12 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
     background-color: var(--backroung-color4);
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 .portfolio-button:focus,
 .portfolio-button:hover {
@@ -170,4 +183,5 @@ body {
 .portfolio-images-decription {
     font-size: 16px;
     line-height: 1.9;
+    letter-spacing: 0.03em;
 }
