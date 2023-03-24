@@ -24,14 +24,14 @@ body {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--logo);
+    color: var(--selection);
     text-decoration: none;
 }
-.web {
-    color: var(--selection);
-}
-.studio {
+.studio-white {
     color: var(--white-color);
+}
+.studio-black {
+    color: var(--logo);
 }
 .navigation {
     font-weight: 500;
