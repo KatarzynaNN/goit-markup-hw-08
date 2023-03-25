@@ -15,6 +15,14 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
 }
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.conteiner {
+    width: 1200px;
+    margin: auto 0;
+}
 
 /* index.html */
 
