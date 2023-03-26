@@ -304,6 +304,9 @@ li {
 .container-portfolio-images li {
     flex-basis: calc((100%-30px) / 3);
 }
+.container-portfolio-images li figcaption {
+    border: 1px solid #eeeeee;
+}
 .conteiner-portfolio-padding {
     padding-top: 50px;
 }
