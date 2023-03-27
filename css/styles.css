@@ -174,21 +174,18 @@ li {
     letter-spacing: 0.03em;
     margin: 0 auto 50px auto;
 }
-.main-three li {
-    margin: 0 15px;
-}
 .conteiner-main-three {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 .main-four-conteiner {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 .main-four li {
-    margin: 0 15px;
-    width: 270px;
-    height: 368px;
+    max-width: 270px;
 }
 .main-four {
     background-color: var(--backroung-color4);
@@ -209,14 +206,15 @@ li {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .main-four-job {
     font-size: 16px;
     line-height: 1.2;
     color: var(--p-color);
     text-align: center;
+    padding-bottom: 30px;
 
     /* footer */
 }
@@ -305,7 +303,9 @@ li {
     flex-basis: calc((100%-30px) / 3);
 }
 .container-portfolio-images li figcaption {
-    border: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
 }
 .conteiner-portfolio-padding {
     padding-top: 50px;
