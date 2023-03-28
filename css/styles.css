@@ -51,7 +51,6 @@ li {
     letter-spacing: 0.03em;
     color: var(--selection);
     text-decoration: none;
-    margin-right: 93px;
 }
 .studio-white {
     color: var(--white-color);
@@ -67,6 +66,7 @@ li {
     color: var(--header-color);
     background-color: var(--background-color1);
     margin-right: 371px;
+    margin-left: 93px;
 }
 .container-navigation {
     display: flex;
