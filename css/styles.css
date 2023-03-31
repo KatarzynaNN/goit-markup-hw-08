@@ -65,13 +65,13 @@ li {
     letter-spacing: 0.02em;
     color: var(--header-color);
     background-color: var(--background-color1);
-    margin-right: 371px;
+    margin-right: 345px;
     margin-left: 93px;
 }
 .container-navigation {
     display: flex;
     flex-direction: row;
-    gap: 46px;
+    gap: 30px;
 }
 .navigation-link {
     color: inherit;
@@ -95,6 +95,14 @@ li {
     color: var(--selection);
     cursor: pointer;
 }
+.contact-icon {
+    fill: var(--p-color);
+}
+.contact-icon:hover {
+    fill: var(--selection);
+    cursor: pointer;
+}
+
 .contact-margin {
     margin-right: 50px;
 }
@@ -106,6 +114,17 @@ li {
     color: var(--white-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/backgr/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .main-title {
     font-weight: 900;
