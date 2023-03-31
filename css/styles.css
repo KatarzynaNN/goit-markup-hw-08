@@ -326,10 +326,16 @@ li {
 .footer-join-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.4;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
+}
+.footer-join {
+    margin-top: 12px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    display: block;
 }
 .footer-join-icons {
     display: flex;
@@ -410,4 +416,9 @@ li {
 }
 .conteiner-portfolio-padding {
     padding-top: 50px;
+}
+.container-portfolio-images li:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
