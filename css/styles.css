@@ -157,8 +157,6 @@ li {
     cursor: pointer;
 }
 .main-two {
-    margin-left: 215px;
-    margin-right: 215px;
     padding-bottom: 0;
 }
 .main-two li {
@@ -283,6 +281,12 @@ li {
     border: solid 1px #afb1b8;
     border-radius: 4px;
     padding: 16px 32px;
+    fill: #afb1b8;
+}
+.main-five-icons:hover {
+    fill: var(--selection);
+    border: solid 1px var(--selection);
+    cursor: pointer;
 }
 /* footer */
 
