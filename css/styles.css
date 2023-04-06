@@ -97,12 +97,12 @@ li {
 }
 .contact-icon {
     fill: var(--p-color);
+    margin-right: 10px;
 }
 .contact-icon:hover {
     fill: var(--selection);
     cursor: pointer;
 }
-
 .contact-margin {
     margin-right: 50px;
 }
@@ -258,7 +258,8 @@ li {
     line-height: 0;
     fill: #afb1b8;
 }
-.main-four-icons-a:hover {
+.main-four-icons-a:hover,
+.main-four-icons-a:focus {
     background-color: var(--selection);
     border-radius: 50%;
     fill: var(--background-color1);
@@ -334,7 +335,6 @@ li {
 .footer-join {
     margin-top: 12px;
     margin-left: 70px;
-    margin-bottom: 100px;
     display: block;
 }
 .footer-join-icons {
