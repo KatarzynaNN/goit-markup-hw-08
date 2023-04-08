@@ -90,7 +90,6 @@ li {
     color: var(--p-color);
     text-decoration: none;
     fill: var(--p-color);
-    gap: 30px;
 }
 .contact:hover,
 .contact:focus {
