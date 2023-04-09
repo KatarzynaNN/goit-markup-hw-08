@@ -441,7 +441,7 @@ li {
         1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
-.container-portfolio-images-li {
+.container-portfolio-images-box {
     position: relative;
     overflow: hidden;
 }
@@ -459,9 +459,10 @@ li {
     top: 0;
     left: 0;
     background: rgba(33, 150, 243, 0.9);
-    transform: translateY(150%);
-    transition: transform 250ms ease;
+    transform: translateY(110%);
+    transform-origin: bottom center;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.container-portfolio-images-li:hover .container-portfolio-images-overlay {
+.container-portfolio-images-box:hover .container-portfolio-images-overlay {
     transform: translateY(0);
 }
