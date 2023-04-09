@@ -82,6 +82,23 @@ li {
     color: var(--selection);
     cursor: pointer;
 }
+.navigation-link-li {
+    position: relative;
+}
+.current::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 47px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 4px;
+    background-color: var(--selection);
+    border-radius: 2px;
+    margin: 0 auto;
+}
 .contact {
     font-weight: 500;
     font-size: 14px;
@@ -423,4 +440,28 @@ li {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
+}
+.container-portfolio-images-li {
+    position: relative;
+    overflow: hidden;
+}
+.container-portfolio-images-overlay p {
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    padding: 63px 24px 91px;
+}
+.container-portfolio-images-overlay {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    top: 0;
+    left: 0;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(150%);
+    transition: transform 250ms ease;
+}
+.container-portfolio-images-li:hover .container-portfolio-images-overlay {
+    transform: translateY(0);
 }
