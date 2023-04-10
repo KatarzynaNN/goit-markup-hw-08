@@ -493,3 +493,46 @@ li {
 .container-portfolio-images-box:hover .container-portfolio-images-overlay {
     transform: translateY(0);
 }
+
+/* modal window */
+
+.modal {
+    position: absolute;
+    height: 581px;
+    width: 528px;
+    opacity: 1;
+    background-color: var(--white-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    visibility: visible;
+    opacity: 1;
+}
+.close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--logo);
+    background-color: var(--background-color1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
