@@ -554,7 +554,7 @@ svg {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition-property: ;
+    transition-property: visibility, opacity;
     transition-delay: 250ms;
     transition-delay: 250ms;
 }
