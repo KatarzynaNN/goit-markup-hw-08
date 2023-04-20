@@ -441,59 +441,35 @@ svg {
     display: flex;
     gap: 8px;
     justify-content: center;
+    margin-bottom: 50px;
 }
-.container-buttons-padding {
-    padding-bottom: 0px;
-}
-.portfolio-images-titles {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    padding: 20px 24px 9px;
-}
-.portfolio-images-decription {
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    padding-left: 24px;
-    padding-bottom: 20px;
-}
-.container-portfolio-images {
+.projects {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.container-portfolio-images li {
-    flex-basis: calc((100%-30px) / 3);
+.project-box {
+    width: 370px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.container-portfolio-images li figcaption {
-    border-bottom: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-}
-.container-portfolio-padding {
-    padding-top: 50px;
-}
-.container-portfolio-images li:hover,
-.container-portfolio-images li:focus {
+.project-box:hover,
+.project-box:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
-.container-portfolio-images-box {
+.project-wrapper {
     position: relative;
     overflow: hidden;
-    width: 370px;
 }
-.container-portfolio-images-overlay p {
+.project-overlay p {
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: var(--white-color);
     padding: 63px 24px 91px;
 }
-.container-portfolio-images-overlay {
+.project-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -503,9 +479,30 @@ svg {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.container-portfolio-images-box:hover .container-portfolio-images-overlay,
-.container-portfolio-images-box:focus .container-portfolio-images-overlay {
+.project-box:hover .project-overlay,
+.project-box:focus .project-overlay {
     transform: translateY(0);
+}
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-description {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--p-color);
+}
+.project-subtitles {
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    padding: 20px 24px;
+}
+.container-portfolio-padding {
+    padding-top: 50px;
 }
 
 /* modal window */
