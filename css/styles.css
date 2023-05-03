@@ -55,10 +55,10 @@ svg {
     color: var(--selection);
     text-decoration: none;
 }
-.studio-white {
+.logo--white {
     color: var(--white-color);
 }
-.studio-black {
+.logo--black {
     color: var(--logo);
 }
 .navigation {
@@ -71,25 +71,25 @@ svg {
     margin-right: auto;
     margin-left: 93px;
 }
-.container-navigation {
+.navigation_list {
     display: flex;
     flex-direction: row;
     gap: 46px;
 }
-.navigation-link {
+.navigation_link {
     color: inherit;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation_link:hover,
+.navigation_link:focus {
     color: var(--selection);
     cursor: pointer;
 }
-.navigation-link-li {
+.navigation_item {
     position: relative;
 }
-.current::after {
+.navigation_item--current::after {
     display: inline-block;
     content: '';
     position: absolute;
@@ -103,7 +103,7 @@ svg {
     border-radius: 2px;
     margin: 0 auto;
 }
-.active {
+.navigation_link--active {
     color: var(--selection);
 }
 .contact {
@@ -123,11 +123,11 @@ svg {
     cursor: pointer;
     fill: var(--selection);
 }
-.contact-icon {
+.contact_icon {
     margin-right: 10px;
 }
 
-.contact-margin {
+.contact--margin {
     margin-right: 30px;
 }
 
@@ -150,7 +150,7 @@ svg {
     background-repeat: no-repeat;
     background-position: center;
 }
-.main-title {
+.main_title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636;
@@ -162,7 +162,7 @@ svg {
     margin-right: auto;
     margin-bottom: 30px;
 }
-.main-button {
+.main_button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -183,38 +183,35 @@ svg {
 .main-two {
     padding-bottom: 0;
 }
-.main-two li {
+.main-two_item {
     padding-right: 30px;
 }
-.main-two li:last-child {
-    padding-right: 0;
-}
-.main-two-title {
+.main-two_title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.main-two-paragraph {
+.main-two_paragraph {
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--p-color);
     width: 270px;
 }
-.container-main-two {
+.main-two_list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.main-two-icons {
+.main-two_icons {
     background-color: var(--backroung-color4);
     padding: 25px 100px;
     border-radius: 4px;
     margin-bottom: 30px;
 }
-.main-three-title {
+.main-three_title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -222,15 +219,15 @@ svg {
     letter-spacing: 0.03em;
     margin: 0 auto 50px auto;
 }
-.container-main-three {
+.main-three_list {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.container-main-three-img {
+.main-three_img {
     position: relative;
 }
-.container-main-three-text {
+.main-three_text {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -244,24 +241,17 @@ svg {
     color: var(--white-color);
     padding-top: 27px;
 }
-.main-four-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-.main-four li {
-    max-width: 270px;
-}
 .main-four {
     background-color: var(--backroung-color4);
 }
-.main-four-backgroung {
+.main-four_item {
     background-color: var(--background-color1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    max-width: 270px;
 }
-.main-four-title {
+.main-four_title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -269,7 +259,12 @@ svg {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-.main-four-name {
+.main-four_list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.main-four_name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -277,13 +272,13 @@ svg {
     padding-top: 30px;
     padding-bottom: 10px;
 }
-.main-four-job {
+.main-four_job {
     font-size: 16px;
     line-height: 1.2;
     color: var(--p-color);
     text-align: center;
 }
-.main-four-icons {
+.social-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -291,7 +286,7 @@ svg {
     margin-bottom: 30px;
     margin-top: 16px;
 }
-.main-four-icons-a {
+.social-icons_icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -302,14 +297,14 @@ svg {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-four-icons-a:hover,
-.main-four-icons-a:focus {
+.social-icons_icon:hover,
+.social-icons_icon:focus {
     background-color: var(--selection);
     fill: var(--background-color1);
     cursor: pointer;
 }
 
-.main-five-title {
+.main-five_title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -317,12 +312,12 @@ svg {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-.main-five-container {
+.main-five_list {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.main-five-icons {
+.main-five_logo {
     width: 170px;
     height: 92px;
     border: solid 1px #afb1b8;
@@ -332,8 +327,8 @@ svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-five-icons:hover,
-.main-five-icons:focus {
+.main-five_logo:hover,
+.main-five_logo:focus {
     fill: var(--selection);
     border: solid 1px var(--selection);
     cursor: pointer;
@@ -345,14 +340,14 @@ svg {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-adress {
+.adress {
     font-style: normal;
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--white-color);
 }
-.footer-contact {
+.mail-tel {
     font-style: normal;
     font-size: 14px;
     line-height: 1.63;
@@ -362,16 +357,16 @@ svg {
     padding-top: 9px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-contact:hover,
-.footer-contact:focus {
+.mail-tel:hover,
+.mail-tel:focus {
     color: var(--selection);
 }
-.footer-container {
+.adress-list {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
 }
-.footer-join-title {
+.join_title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.4;
@@ -379,22 +374,22 @@ svg {
     text-transform: uppercase;
     color: var(--white-color);
 }
-.footer-join,
-.footer-newsletter {
+.join,
+.newsletter {
     margin-top: 12px;
     margin-left: 70px;
     display: block;
 }
-.footer-newsletter {
+.newsletter {
     margin-left: 74px;
 }
-.footer-join-icons {
+.join_list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;
 }
-.footer-join-icons li {
+.join_item {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     padding: 12px;
@@ -403,8 +398,8 @@ svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-join-icons li:hover,
-.footer-join-icons li:focus {
+.join_item:hover,
+.join_item:focus {
     background-color: var(--selection);
     fill: var(--white-color);
     cursor: pointer;
@@ -413,7 +408,7 @@ svg {
     display: flex;
     flex-direction: row;
 }
-.footer-newsletter-title {
+.newsletter_title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.4;
@@ -422,7 +417,7 @@ svg {
     color: var(--white-color);
     margin-bottom: 20px;
 }
-.footer-newsletter-input {
+.newsletter_input {
     padding: 15px 16px;
     margin-right: 12px;
     width: 358px;
@@ -433,12 +428,12 @@ svg {
     border-radius: 4px;
     color: var(--white-color);
 }
-.footer-newsletter-input::placeholder {
+.newsletter_input::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-newsletter-button {
+.newsletter-button {
     background-color: var(--selection);
     width: 200px;
     height: 50px;
@@ -447,14 +442,14 @@ svg {
     border-radius: 4px;
     cursor: pointer;
 }
-.footer-newsletter-button-text {
+.newsletter-button_text {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
     color: var(--white-color);
 }
-.footer-newsletter-button-icon {
+.newsletter-button_icon {
     width: 24px;
     height: 24px;
     margin-left: 24px;
@@ -462,10 +457,10 @@ svg {
 
 /* portfolio.html */
 
-.main-portfolio {
+.portfolio {
     background-color: var(--background-color1);
 }
-.portfolio-button {
+.portfolio_button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -480,14 +475,14 @@ svg {
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-button:focus,
-.portfolio-button:hover {
+.portfolio_button:focus,
+.portfolio_button:hover {
     color: var(--white-color);
     background-color: var(--selection);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.container-buttons {
+.portfolio_list {
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -498,12 +493,12 @@ svg {
     flex-wrap: wrap;
     gap: 30px;
 }
-.project-box {
+.projects_item {
     width: 370px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-box:hover,
-.project-box:focus {
+.projects_item:hover,
+.projects_item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
@@ -529,30 +524,27 @@ svg {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-box:hover .project-overlay,
-.project-box:focus .project-overlay {
+.projects_item:hover .project-overlay,
+.projects_item:focus .project-overlay {
     transform: translateY(0);
 }
-.project-title {
+.projects_title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.project-description {
+.projects_description {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--p-color);
 }
-.project-subtitles {
+.projects_subtitles {
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     padding: 20px 24px;
-}
-.container-portfolio-padding {
-    padding-top: 50px;
 }
 
 /* modal window */
@@ -583,7 +575,7 @@ svg {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
-.close-btn {
+.modal_button {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -609,18 +601,7 @@ label {
 .modal {
     padding: 0 40px;
 }
-.modal-label {
-    position: relative;
-}
-.modal-label-text {
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--p-color);
-    padding-top: 10px;
-}
-.modal-title {
+.modal_title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -630,7 +611,18 @@ label {
     margin-top: 40px;
     color: var(--main-text-color);
 }
-.modal-icon {
+.modal-label {
+    position: relative;
+}
+.modal-label_text {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--p-color);
+    padding-top: 10px;
+}
+.modal-label_icon {
     position: absolute;
     top: 39px;
     left: 15px;
@@ -639,7 +631,7 @@ label {
     fill: var(--main-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input {
+.modal-label_input {
     display: block;
     padding-left: 42px;
     width: 448px;
@@ -649,12 +641,12 @@ label {
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus-within,
-.modal-input:focus-within + svg {
+.modal-label_input:focus-within,
+.modal-label_input:focus-within + svg {
     border-color: var(--selection);
     fill: var(--selection);
 }
-.modal-textarea {
+.modal-label_textarea {
     display: block;
     height: 120px;
     width: 448px;
@@ -665,18 +657,18 @@ label {
     padding: 12px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-textarea:active,
-.modal-textarea:hover,
-.modal-textarea:focus {
+.modal-label_textarea:navigation_link--active,
+.modal-label_textarea:hover,
+.modal-label_textarea:focus {
     border-color: var(--selection);
 }
-.modal-textarea::placeholder {
+.modal-label_textarea::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-.modal-confirmation {
+.confirmation {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -684,21 +676,20 @@ label {
     padding-left: 38px;
     padding-top: 20px;
 }
-.checkbox {
-    display: flex;
-    position: relative;
+.confirmation_link {
+    color: var(--selection);
 }
-.modal-label-checkbox {
+.checkbox {
     display: flex;
     position: relative;
     gap: 8px;
 }
-.modal-checkbox-input {
+.checkbox_input {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
     /* ukrywa checkbox input, ale jest widoczny dla czytników */
 }
-.checbox-icon {
+.checkbox_icon {
     position: absolute;
     width: 16px;
     height: 15px;
@@ -707,11 +698,11 @@ label {
     top: 25px;
     left: 15px;
 }
-.modal-checkbox-input:checked + .checbox-icon {
+.checkbox_input:checked + .checkbox_icon {
     background-color: var(--selection);
     border-color: var(--selection);
 }
-.checbox-img {
+.checbox_img {
     position: absolute;
     top: 2px;
     left: 1px;
@@ -731,7 +722,4 @@ label {
     letter-spacing: 0.06em;
     color: var(--white-color);
     cursor: pointer;
-}
-.modal-link {
-    color: var(--selection);
 }
