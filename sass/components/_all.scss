@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $main-text-color;
+}
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+li {
+    list-style: none;
+}
+svg {
+    vertical-align: middle;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}

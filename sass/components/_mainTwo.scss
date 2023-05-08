@@ -1,0 +1,32 @@
+.main-two {
+    padding-bottom: 0;
+
+    &_item {
+        padding-right: 30px;
+    }
+    &_title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    &_paragraph {
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 0.03em;
+        color: $p-color;
+        width: 270px;
+    }
+    &_list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &_icons {
+        background-color: $backroung-color4;
+        padding: 25px 100px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+}

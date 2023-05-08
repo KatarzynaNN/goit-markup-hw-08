@@ -1,0 +1,64 @@
+.main-four {
+    background-color: $backroung-color4;
+
+    &_item {
+        background-color: $background-color1;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        max-width: 270px;
+    }
+    &_title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+    &_list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &_name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    &_job {
+        font-size: 16px;
+        line-height: 1.2;
+        color: var(--p-color);
+        text-align: center;
+    }
+}
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+
+    &_icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12px;
+        line-height: 0;
+        fill: #afb1b8;
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &_icon:hover,
+    &_icon:focus {
+        background-color: $selection;
+        fill: $background-color1;
+        cursor: pointer;
+    }
+}

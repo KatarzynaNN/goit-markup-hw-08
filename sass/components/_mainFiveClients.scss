@@ -1,0 +1,30 @@
+.main-five_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.main-five_list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.main-five_logo {
+    width: 170px;
+    height: 92px;
+    border: solid 1px #afb1b8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $selection;
+        border: solid 1px $selection;
+        cursor: pointer;
+    }
+}
