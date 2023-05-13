@@ -1,0 +1,32 @@
+.services {
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin: 0 auto 50px auto;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__img {
+        position: relative;
+    }
+    &__text {
+        position: absolute;
+        width: 370px;
+        height: 70px;
+        top: 1430px;
+        background: rgba(47, 48, 58, 0.8);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $white-color;
+        padding-top: 27px;
+    }
+}

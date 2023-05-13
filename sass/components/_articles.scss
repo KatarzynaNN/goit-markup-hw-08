@@ -1,29 +1,29 @@
-.main-two {
+.articles {
     padding-bottom: 0;
 
-    &_item {
+    &__item {
         padding-right: 30px;
     }
-    &_title {
+    &__title {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.03em;
         text-transform: uppercase;
     }
-    &_paragraph {
+    &__paragraph {
         font-size: 14px;
         line-height: 1.8;
         letter-spacing: 0.03em;
         color: $p-color;
         width: 270px;
     }
-    &_list {
+    &__list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
-    &_icons {
+    &__icons {
         background-color: $backroung-color4;
         padding: 25px 100px;
         border-radius: 4px;

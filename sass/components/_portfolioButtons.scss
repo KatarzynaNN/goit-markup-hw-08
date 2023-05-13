@@ -1,6 +1,6 @@
 .portfolio {
     background-color: $background-color1;
-    &_button {
+    &__button {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.6;
@@ -23,7 +23,7 @@
         }
     }
 
-    &_list {
+    &__list {
         display: flex;
         gap: 8px;
         justify-content: center;

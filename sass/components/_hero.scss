@@ -1,4 +1,4 @@
-.main {
+.hero {
     background-color: $background-color2;
     color: $white-color;
     padding-top: 200px;
@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    &_title {
+    &__title {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.3636;
@@ -28,7 +28,7 @@
         margin-bottom: 30px;
     }
 
-    &_button {
+    &__button {
         font-weight: 700;
         font-size: 16px;
         line-height: 1.875;
