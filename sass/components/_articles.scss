@@ -1,8 +1,28 @@
 .articles {
     padding-bottom: 0;
+    margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 45px;
+    }
+    @include desktop {
+        margin-bottom: 0;
+    }
 
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
     &__item {
-        padding-right: 30px;
+        @include tablet {
+            margin: 15px;
+            flex-basis: calc((100% - 4 * 15px) / 2);
+        }
+        @include desktop {
+            margin: 15px;
+            flex-basis: calc((100% - 8 * 15px) / 4);
+        }
     }
     &__title {
         font-weight: 700;
@@ -10,23 +30,43 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center;
+        @include tablet {
+            text-align: left;
+        }
     }
     &__paragraph {
         font-size: 14px;
         line-height: 1.8;
         letter-spacing: 0.03em;
         color: $p-color;
-        width: 270px;
+        width: 450px;
+        margin-bottom: 30px;
+
+        @include tablet {
+            width: 354px;
+            margin-bottom: 0;
+        }
+        @include desktop {
+            width: 270px;
+            margin-bottom: 0;
+        }
     }
-    &__list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+
     &__icons {
         background-color: $backroung-color4;
-        padding: 25px 100px;
         border-radius: 4px;
         margin-bottom: 30px;
+        padding: 25px 192.34px;
+
+        @include tablet {
+            padding: 25px 142px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include desktop {
+            padding: 25px 100px;
+        }
     }
 }

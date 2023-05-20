@@ -72,6 +72,21 @@
                     </a>
                 </div>
             </div>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg class="mobile-menu_icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+
+                <ul class="mobile-menu">
+                    <li><a href="./index.html" class="link">Agencja</a></li>
+                    <li>
+                        <a href="./portfolio.html" class="link">Portfolio</a>
+                    </li>
+                    <li><a href="" class="link">Kontakt</a></li>
+                </ul>
+            </div>
         </header>
         <main>
             <section class="hero">
@@ -132,7 +147,7 @@
                                 sodales dui. Interdum et malesuada
                             </p>
                         </li>
-                        <li>
+                        <li class="articles__item">
                             <div class="articles__icons">
                                 <svg width="70" height="70">
                                     <use
@@ -196,12 +211,30 @@
                     <h2 class="team__title">Nasz zespół</h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <img
-                                src="./images/emp/emp1.jpg"
-                                alt="John Doe"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/emp/emp1Mobile@1x.jpg 1x,
+                                        ./images/emp/emp1Mobile@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/emp/emp1Tablet@1x.jpg 1x,
+                                        ./images/emp/emp1Tablet@2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="./images/emp/emp1.jpg"
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    src="./images/emp/emp1.jpg"
+                                    alt="John Doe"
+                                />
+                            </picture>
                             <h4 class="team__name">John Doe</h4>
                             <p class="team__job">Product Designer</p>
                             <ul class="social-icons">
@@ -260,12 +293,30 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img
-                                src="./images/emp/emp2.jpg"
-                                alt="John Doe"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/emp/emp2Mobile@1x.jpg 1x,
+                                        ./images/emp/emp2Mobile@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/emp/emp2Tablet@1x.jpg 1x,
+                                        ./images/emp/emp2Tablet@2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="./images/emp/emp2.jpg"
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    src="./images/emp/emp2.jpg"
+                                    alt="John Doe"
+                                />
+                            </picture>
                             <h4 class="team__name">John Doe</h4>
                             <p class="team__job">Frontend Developer</p>
                             <ul class="social-icons">
@@ -324,12 +375,30 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img
-                                src="./images/emp/emp3.jpg"
-                                alt="John Doe"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/emp/emp3Mobile@1x.jpg 1x,
+                                        ./images/emp/emp3Mobile@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/emp/emp3Tablet@1x.jpg 1x,
+                                        ./images/emp/emp3Tablet@2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="./images/emp/emp3.jpg"
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    src="./images/emp/emp3.jpg"
+                                    alt="John Doe"
+                                />
+                            </picture>
                             <h4 class="team__name">John Doe</h4>
                             <p class="team__job">FMarketing</p>
                             <ul class="social-icons">
@@ -388,12 +457,30 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img
-                                src="./images/emp/emp4.jpg"
-                                alt="John Doe"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/emp/emp4Mobile@1x.jpg 1x,
+                                        ./images/emp/emp4Mobile@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/emp/emp4Tablet@1x.jpg 1x,
+                                        ./images/emp/emp4Tablet@2x.jpg 2x
+                                    "
+                                    media="(max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="./images/emp/emp4.jpg"
+                                    media="(min-width: 1200px)"
+                                />
+                                <img
+                                    src="./images/emp/emp4.jpg"
+                                    alt="John Doe"
+                                />
+                            </picture>
                             <h4 class="team__name">John Doe</h4>
                             <p class="team__job">UI Designer</p>
                             <ul class="social-icons">
@@ -680,7 +767,9 @@
                         </div>
                         <p class="modal__confirmation">
                             Oświadczam iż akceptuję
-                            <a href="" class="modal__confirmation-link">Regulamin</a>
+                            <a href="" class="modal__confirmation-link"
+                                >Regulamin</a
+                            >
                             i
                             <a href="" class="modal__confirmation-link"
                                 >Politykę Prywatności</a
@@ -692,5 +781,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

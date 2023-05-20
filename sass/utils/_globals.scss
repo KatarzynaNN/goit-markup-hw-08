@@ -7,8 +7,12 @@ body {
     color: $main-text-color;
 }
 section {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   @include desktop {
+   padding-top: 94px;
     padding-bottom: 94px;
+   }
 }
 li {
     list-style: none;
@@ -17,8 +21,15 @@ svg {
     vertical-align: middle;
 }
 .container {
-    max-width: 1200px;
+    max-width: 480px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+
+    @include tablet {
+		max-width: 768px;
+	}
+	@include desktop {
+		max-width: 1200px;
+	}
 }
