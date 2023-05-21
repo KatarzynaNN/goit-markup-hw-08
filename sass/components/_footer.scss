@@ -2,9 +2,24 @@
     background-color: $background-color2;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
     &__wrapper {
-        display: flex;
-        flex-direction: row;
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        @include desktop {
+            text-align: left;
+        }
+    }
+    &_wrapper-tablet {
+        @include tablet {
+            margin-left: 61px;
+        }
+        @include desktop {
+            margin-left: 0;
+        }
     }
     &__logo {
         font-family: 'Raleway';
@@ -24,6 +39,12 @@
         line-height: 1.8;
         letter-spacing: 0.03em;
         color: $white-color;
+        &-list {
+            padding-bottom: 60px;
+            @include desktop {
+                padding-bottom: 0;
+            }
+        }
     }
     &__mail-tel {
         font-style: normal;
@@ -46,9 +67,18 @@
     }
 }
 .join {
-    margin-top: 12px;
-    margin-left: 70px;
     display: block;
+    margin-bottom: 60px;
+    text-align: center;
+    @include tablet {
+        margin-left: 144px;
+    }
+    @include desktop {
+        margin-top: 12px;
+        margin-left: 70px;
+        margin-bottom: 0;
+        text-align: left;
+    }
 
     &__title {
         font-weight: 700;
@@ -63,6 +93,7 @@
         flex-wrap: wrap;
         gap: 10px;
         margin-top: 20px;
+        align-items: center;
     }
     &__item {
         background-color: rgba(255, 255, 255, 0.1);
@@ -78,13 +109,27 @@
             fill: $white-color;
             cursor: pointer;
         }
+        &:first-child {
+            margin-left: auto;
+        }
+        &:last-child {
+            margin-right: auto;
+        }
     }
 }
 
 .newsletter {
     margin-top: 12px;
-    margin-left: 74px;
-    display: block;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include desktop {
+        display: block;
+    }
     &__title {
         font-weight: 700;
         font-size: 14px;
@@ -93,17 +138,26 @@
         text-transform: uppercase;
         color: $white-color;
         margin-bottom: 20px;
+        @include desktop {
+            margin-left: 74px;
+        }
     }
     &__input {
         padding: 15px 16px;
         margin-right: 12px;
-        width: 358px;
+        width: 450px;
         height: 50px;
         background-color: $background-color2;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         color: $white-color;
+        margin-bottom: 20px;
+        @include desktop {
+            margin-bottom: 0;
+            margin-left: 74px;
+            width: 358px;
+        }
         &::placeholder {
             font-size: 16px;
             line-height: 1.25;
