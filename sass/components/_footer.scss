@@ -2,25 +2,62 @@
     background-color: $background-color2;
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: center;
-    &__wrapper {
-        @include tablet {
-            display: flex;
-            flex-direction: row;
+    // text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // &__wrapper {
+    //     @include tablet {
+    //         display: flex;
+    //         flex-direction: row;
+    //         flex-wrap: wrap;
+    //     }
+    //     @include desktop {
+    //         text-align: left;
+    //     }
+    // }
+    // &__wrapper-tablet {
+    //     @include tablet {
+    //         margin-left: 61px;
+    //     }
+    //     @include desktop {
+    //         margin-left: 0;
+    //     }
+    // }
+    &__wraper {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        @include desktop {
+            display: inline-block;
             flex-wrap: wrap;
         }
+    }
+
+    &__adress-and-socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 60px;
+        @include tablet {
+            flex-direction: row;
+            align-items: normal;
+            justify-content: center;
+            gap: 144px;
+        }
         @include desktop {
+            gap: 70px;
+            align-items: normal;
+            justify-content: left;
             text-align: left;
         }
     }
-    &_wrapper-tablet {
-        @include tablet {
-            margin-left: 61px;
-        }
-        @include desktop {
-            margin-left: 0;
-        }
-    }
+    // &__newsletter {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
     &__logo {
         font-family: 'Raleway';
         font-weight: 700;
@@ -39,12 +76,12 @@
         line-height: 1.8;
         letter-spacing: 0.03em;
         color: $white-color;
-        &-list {
-            padding-bottom: 60px;
-            @include desktop {
-                padding-bottom: 0;
-            }
-        }
+        // &-list {
+        //     // padding-bottom: 60px;
+        //     // @include desktop {
+        //     //     padding-bottom: 0;
+        //     // }
+        // }
     }
     &__mail-tel {
         font-style: normal;
@@ -68,15 +105,19 @@
 }
 .join {
     display: block;
-    margin-bottom: 60px;
     text-align: center;
-    @include tablet {
-        margin-left: 144px;
-    }
+    // margin-bottom: 60px;
+
+    // @include tablet {
+    //     margin-left: 144px;
+    // }
+    // @include desktop {
+    //     margin-top: 12px;
+    //     margin-left: 70px;
+    //     margin-bottom: 0;
+    //     text-align: left;
+    // }
     @include desktop {
-        margin-top: 12px;
-        margin-left: 70px;
-        margin-bottom: 0;
         text-align: left;
     }
 
@@ -109,16 +150,17 @@
             fill: $white-color;
             cursor: pointer;
         }
-        &:first-child {
-            margin-left: auto;
-        }
-        &:last-child {
-            margin-right: auto;
-        }
+        //     &:first-child {
+        //         margin-left: auto;
+        //     }
+        //     &:last-child {
+        //         margin-right: auto;
+        //     }
+        // }
     }
 }
-
 .newsletter {
+    text-align: center;
     margin-top: 12px;
     @include tablet {
         display: flex;
@@ -129,6 +171,7 @@
     }
     @include desktop {
         display: block;
+        text-align: left;
     }
     &__title {
         font-weight: 700;
@@ -138,14 +181,15 @@
         text-transform: uppercase;
         color: $white-color;
         margin-bottom: 20px;
-        @include desktop {
-            margin-left: 74px;
-        }
+        // @include desktop {
+        //     margin-left: 74px;
+        // }
     }
     &__input {
         padding: 15px 16px;
         margin-right: 12px;
-        width: 450px;
+        width: 100%;
+        max-width: 450px;
         height: 50px;
         background-color: $background-color2;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -155,8 +199,8 @@
         margin-bottom: 20px;
         @include desktop {
             margin-bottom: 0;
-            margin-left: 74px;
-            width: 358px;
+            // margin-left: 74px;
+            max-width: 358px;
         }
         &::placeholder {
             font-size: 16px;

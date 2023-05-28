@@ -87,7 +87,11 @@
                         id="mobile-menu"
                     >
                         <button type="button" class="menu-toggle js-close-menu">
-                            <svg class="menu-toggle__button" width="18" height="18">
+                            <svg
+                                class="menu-toggle__button"
+                                width="18"
+                                height="18"
+                            >
                                 <use
                                     href="./images/icons.svg#icon-close_24px"
                                 ></use>
@@ -110,46 +114,48 @@
                                 <a href="" class="mobile-menu__link">Kontakt</a>
                             </li>
                         </ul>
-                        <ul class="mobile-contact">
-                            <li class="mobile-contact__item">
-                                <a
-                                    class="mobile-contact__tel"
-                                    href="tel:+48111111111"
-                                >
-                                    +48 111 111 111
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    class="mobile-contact__mail"
-                                    href="mailto:info@devstudio.com"
-                                >
-                                    info@devstudio.com
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="mobile-socials">
-                            <li class="mobile-socials__item">
-                                <a href="" class="mobile-socials__link"
-                                    >Instagram</a
-                                >
-                            </li>
-                            <li class="mobile-socials__item">
-                                <a href="" class="mobile-socials__link"
-                                    >Twitter</a
-                                >
-                            </li>
-                            <li class="mobile-socials__item">
-                                <a href="" class="mobile-socials__link"
-                                    >Facebook</a
-                                >
-                            </li>
-                            <li class="mobile-socials__item">
-                                <a href="" class="mobile-socials__link"
-                                    >LinkedIn</a
-                                >
-                            </li>
-                        </ul>
+                        <div>
+                            <ul class="mobile-contact">
+                                <li class="mobile-contact__item">
+                                    <a
+                                        class="mobile-contact__tel"
+                                        href="tel:+48111111111"
+                                    >
+                                        +48 111 111 111
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="mobile-contact__mail"
+                                        href="mailto:info@devstudio.com"
+                                    >
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="mobile-socials">
+                                <li class="mobile-socials__item">
+                                    <a href="" class="mobile-socials__link"
+                                        >Instagram</a
+                                    >
+                                </li>
+                                <li class="mobile-socials__item">
+                                    <a href="" class="mobile-socials__link"
+                                        >Twitter</a
+                                    >
+                                </li>
+                                <li class="mobile-socials__item">
+                                    <a href="" class="mobile-socials__link"
+                                        >Facebook</a
+                                    >
+                                </li>
+                                <li class="mobile-socials__item">
+                                    <a href="" class="mobile-socials__link"
+                                        >LinkedIn</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -677,77 +683,93 @@
         </main>
         <footer class="footer">
             <div class="container footer__wrapper">
-                <div class="footer_wrapper-tablet">
-                    <span class="footer__logo"
-                        >Web<span class="footer__logo footer__logo--white"
-                            >Studio</span
-                        ></span
-                    >
-                    <address>
-                        <div class="footer__adress-list">
-                            <span class="footer__adress">
-                                m. Warszawa, Aleje Jerozolimskie 21</span
-                            >
-                            <a
-                                class="footer__mail-tel"
-                                href="mailto:info@example.com"
-                                >info@example.com</a
-                            >
-                            <a class="footer__mail-tel" href="tel:+48111111111"
-                                >+48 111 111 111</a
-                            >
-                        </div>
-                    </address>
-                </div>
-                <div class="join">
-                    <h4 class="join__title">Dołącz do nas</h4>
-                    <ul class="join__list">
-                        <li class="join__item" tabindex="0">
-                            <svg width="20" height="20" class="join__icon">
-                                <use
-                                    href="./images/icons.svg#icon-instagram-2"
-                                />
-                            </svg>
-                        </li>
-                        <li class="join__item" tabindex="0">
-                            <svg width="20" height="20" class="join__icon">
-                                <use href="./images/icons.svg#icon-twitter-1" />
-                            </svg>
-                        </li>
-                        <li class="join__item" tabindex="0">
-                            <svg width="20" height="20" class="join__icon">
-                                <use
-                                    href="./images/icons.svg#icon-facebook-1"
-                                />
-                            </svg>
-                        </li>
-                        <li class="join__item" tabindex="0">
-                            <svg width="20" height="20" class="join__icon">
-                                <use
-                                    href="./images/icons.svg#icon-linkedin-1"
-                                />
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-                <form class="newsletter">
-                    <h2 class="newsletter__title">ZAPISZ SIĘ DO NEWSLETTERA</h2>
-                    <input
-                        class="newsletter__input"
-                        name="email-footer"
-                        placeholder="E-mail"
-                    />
-                    <button class="newsletter__button" type="submit">
-                        <span class="newsletter__button-text">Zapisz się</span>
-                        <svg
-                            class="newsletter__button-icon"
-                            width="24"
-                            height="24"
+                <div class="footer__adress-and-socials">
+                    <!-- <div
+                        class="footer__wrapper-tablet footer__adress-and-socials"
+                    > -->
+                    <div>
+                        <span class="footer__logo"
+                            >Web<span class="footer__logo footer__logo--white"
+                                >Studio</span
+                            ></span
                         >
-                            <use href="./images/icons.svg#icon-icon-send" />
-                        </svg>
-                    </button>
-                </form>
+                        <address>
+                            <div class="footer__adress-list">
+                                <span class="footer__adress">
+                                    m. Warszawa, Aleje Jerozolimskie 21</span
+                                >
+                                <a
+                                    class="footer__mail-tel"
+                                    href="mailto:info@example.com"
+                                    >info@example.com</a
+                                >
+                                <a
+                                    class="footer__mail-tel"
+                                    href="tel:+48111111111"
+                                    >+48 111 111 111</a
+                                >
+                            </div>
+                        </address>
+                    </div>
+                    <!-- </div> -->
+                    <div class="join">
+                        <h4 class="join__title">Dołącz do nas</h4>
+                        <ul class="join__list">
+                            <li class="join__item" tabindex="0">
+                                <svg width="20" height="20" class="join__icon">
+                                    <use
+                                        href="./images/icons.svg#icon-instagram-2"
+                                    />
+                                </svg>
+                            </li>
+                            <li class="join__item" tabindex="0">
+                                <svg width="20" height="20" class="join__icon">
+                                    <use
+                                        href="./images/icons.svg#icon-twitter-1"
+                                    />
+                                </svg>
+                            </li>
+                            <li class="join__item" tabindex="0">
+                                <svg width="20" height="20" class="join__icon">
+                                    <use
+                                        href="./images/icons.svg#icon-facebook-1"
+                                    />
+                                </svg>
+                            </li>
+                            <li class="join__item" tabindex="0">
+                                <svg width="20" height="20" class="join__icon">
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin-1"
+                                    />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__newsletter">
+                    <form class="newsletter">
+                        <h2 class="newsletter__title">
+                            ZAPISZ SIĘ DO NEWSLETTERA
+                        </h2>
+                        <input
+                            class="newsletter__input"
+                            name="email-footer"
+                            placeholder="E-mail"
+                        />
+                        <button class="newsletter__button" type="submit">
+                            <span class="newsletter__button-text"
+                                >Zapisz się</span
+                            >
+                            <svg
+                                class="newsletter__button-icon"
+                                width="24"
+                                height="24"
+                            >
+                                <use href="./images/icons.svg#icon-icon-send" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>

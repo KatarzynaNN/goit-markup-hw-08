@@ -12,7 +12,6 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: -15px;
     }
     &__item {
         @include tablet {
@@ -40,15 +39,9 @@
         line-height: 1.8;
         letter-spacing: 0.03em;
         color: $p-color;
-        width: 450px;
         margin-bottom: 30px;
 
         @include tablet {
-            width: 354px;
-            margin-bottom: 0;
-        }
-        @include desktop {
-            width: 270px;
             margin-bottom: 0;
         }
     }
@@ -57,16 +50,8 @@
         background-color: $backroung-color4;
         border-radius: 4px;
         margin-bottom: 30px;
-        padding: 25px 192.34px;
-
-        @include tablet {
-            padding: 25px 142px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @include desktop {
-            padding: 25px 100px;
-        }
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
     }
 }
