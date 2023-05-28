@@ -2,6 +2,9 @@
     background-color: $background-color2;
     padding-top: 60px;
     padding-bottom: 60px;
+    @include desktop {
+        padding-bottom: 0;
+    }
     // text-align: center;
     // display: flex;
     // flex-direction: column;
@@ -23,13 +26,11 @@
     //         margin-left: 0;
     //     }
     // }
-    &__wraper {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
+    &__wrapper {
         @include desktop {
-            display: inline-block;
-            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            align-items: normal;
         }
     }
 
@@ -172,6 +173,13 @@
     @include desktop {
         display: block;
         text-align: left;
+        margin-top: 0;
+        margin-left: 74px;
+    }
+    &__signin {
+        @include desktop {
+            display: flex;
+        }
     }
     &__title {
         font-weight: 700;
@@ -181,9 +189,6 @@
         text-transform: uppercase;
         color: $white-color;
         margin-bottom: 20px;
-        // @include desktop {
-        //     margin-left: 74px;
-        // }
     }
     &__input {
         padding: 15px 16px;
@@ -199,7 +204,6 @@
         margin-bottom: 20px;
         @include desktop {
             margin-bottom: 0;
-            // margin-left: 74px;
             max-width: 358px;
         }
         &::placeholder {
@@ -216,6 +220,9 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         cursor: pointer;
+        @include desktop {
+            width: 328px;
+        }
         &-text {
             font-weight: 700;
             font-size: 16px;
