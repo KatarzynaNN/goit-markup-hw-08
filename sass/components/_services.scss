@@ -15,14 +15,17 @@
             justify-content: center;
             gap: 30px;
         }
+        &__item {
+            position: relative;
+        }
         &__img {
             position: relative;
         }
         &__text {
             position: absolute;
+            bottom: 0;
             width: 370px;
             height: 70px;
-            top: 1430px;
             background: rgba(47, 48, 58, 0.8);
             font-weight: 700;
             font-size: 14px;
